@@ -22,6 +22,10 @@ interface IImageView : IView {
 
 }
 
+interface IEditText: IView {
+    fun getWindowToken(): Any
+}
+
 interface IRecycler : IView {
     var length: Int
 }
