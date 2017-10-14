@@ -16,6 +16,12 @@ interface IView {
 
 interface ITextView : IView {
     fun setText(text: CharSequence)
+
+
+}
+
+interface IButton : IView {
+    fun setText(text: CharSequence)
 }
 
 interface IImageView : IView {
@@ -28,4 +34,6 @@ interface IEditText: IView {
 
 interface IRecycler : IView {
     var length: Int
+    var position: Int
+    var scroll: Boolean
 }
