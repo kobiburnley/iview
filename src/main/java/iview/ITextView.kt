@@ -16,8 +16,10 @@ interface IView {
 
 interface ITextView : IView {
     fun setText(text: CharSequence)
+}
 
-
+interface IToolbar: IView {
+    fun setTitle(title: CharSequence)
 }
 
 interface IButton : IView {
