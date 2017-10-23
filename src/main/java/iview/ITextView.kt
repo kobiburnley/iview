@@ -26,6 +26,10 @@ interface IButton : IView {
     fun setText(text: CharSequence)
 }
 
+interface IImageButton: IImageView {
+
+}
+
 interface IImageView : IView {
 
 }
