@@ -18,6 +18,13 @@ interface ITextView : IView {
     fun setText(text: CharSequence)
 }
 
+interface IPopupMenu {
+    var handleItemClick: (itemId: Int) -> Boolean
+    fun show()
+    fun dismiss()
+    fun addItems(vararg pairs: Pair<Int, String>)
+}
+
 interface IToolbar: IView {
     fun setTitle(title: CharSequence)
 }
